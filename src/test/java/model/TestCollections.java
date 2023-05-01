@@ -23,7 +23,7 @@ public class TestCollections {
     // 1 --------------------------------
     @Test @Disabled
     void testPrintList() {
-        //todo Распечатать содержимое используя for each
+        list.forEach(System.out::println);
     }
 
     // 2 --------------------------------
@@ -140,9 +140,9 @@ public class TestCollections {
         // todo получить список слов, длиной не более 5 символов, переведенных в нижний регистр, в порядке алфавита, без повторов
         List<String> strings = null;
 
-        assertEquals(202, strings.size());
+        assertEquals(94, strings.size());
         assertEquals("a", strings.get(0));
-        assertEquals("alice", strings.get(10));
+        assertEquals("alice", strings.get(2));
         assertEquals("would", strings.get(strings.size() - 1));
     }
 
