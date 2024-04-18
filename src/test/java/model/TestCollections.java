@@ -23,7 +23,7 @@ public class TestCollections {
     // 1 --------------------------------
     @Test @Disabled
     void testPrintList() {
-        list.forEach(System.out::println);
+        // todo Вивести весь список на екран
     }
 
     // 2 --------------------------------
