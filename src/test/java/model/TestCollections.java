@@ -29,14 +29,14 @@ public class TestCollections {
     // 2 --------------------------------
     @Test @Disabled
     void testChangeWeightOfFirstByOne() {
-        //todo Изменить вес первой коробки на 1.
+        //todo Збільшити вагу першої коробки на 1.
         assertEquals(new HeavyBox(1,2,3,5), list.get(0));
     }
 
     // 3 --------------------------------
     @Test @Disabled
     void testDeleteLast() {
-        //todo Удалить предпоследнюю коробку.
+        //todo Видалити передостанню коробку.
         assertEquals(6, list.size());
         assertEquals(new HeavyBox(1,2,3,4), list.get(0));
         assertEquals(new HeavyBox(1,3,3,4), list.get(list.size()-2));
@@ -45,7 +45,7 @@ public class TestCollections {
     // 4 --------------------------------
     @Test @Disabled
     void testConvertToArray() {
-        //todo Получить массив содержащий коробки из коллекции тремя способами и вывести на консоль.
+        //todo Отримати масив що містить коробки з колекції трьома способами та вивести на консоль.
         HeavyBox[] arr = null;
         assertArrayEquals(new HeavyBox[]{
                 new HeavyBox(1,2,3,4),
@@ -61,14 +61,14 @@ public class TestCollections {
     // 5 --------------------------------
     @Test @Disabled
     void testDeleteBoxesByWeight() {
-        // todo удалить все коробки, которые весят 4
+        // todo Видалити всі коробки, які мають вагу 4
         assertEquals(3, list.size());
     }
 
     // 6 --------------------------------
     @Test @Disabled
     void testSortBoxesByWeight() {
-        // отсортировать коробки по возрастанию веса. При одинаковом весе - по возрастанию объема
+        // todo відсортувати коробки за зростанням ваги. При одинаковій вазі - за збільшенням об'єма
         assertEquals(new HeavyBox(1,1,1,1), list.get(0));
         assertEquals(new HeavyBox(2,3,4,7), list.get(6));
         assertEquals(new HeavyBox(1,2,3,4), list.get(3));
@@ -78,14 +78,14 @@ public class TestCollections {
     // 7 --------------------------------
     @Test @Disabled
     void testClearList() {
-        //todo Удалить все коробки.
+        //todo Видалити всі коробки.
         assertTrue(list.isEmpty());
     }
 
     // 8 --------------------------------
     @Test @Disabled
     void testReadAllLinesFromFileToList() {
-        // todo Прочитать все строки в коллекцию
+        // todo Прочитати всі рядки в колекцію
         List<String> lines = null;
         assertEquals(19, lines.size());
         assertEquals("", lines.get(8));
@@ -94,7 +94,7 @@ public class TestCollections {
     // 9 --------------------------------
     @Test @Disabled
     void testReadAllWordsFromFileToList() throws IOException {
-        // todo прочитать все строки, разбить на слова и записать в коллекцию
+        // todo прочитати всі рядки, розбити на слова і записати в колекцію
         List<String> words = readAllWordsFromFileToList();
         assertEquals(257, words.size());
     }
@@ -107,7 +107,7 @@ public class TestCollections {
     // 10 -------------------------------
     @Test @Disabled
     void testFindLongestWord() {
-        // todo Найти самое длинное слово
+        // todo Знайти найдовжче слово
         assertEquals("conversations", findLongestWord());
     }
 
@@ -118,7 +118,7 @@ public class TestCollections {
     // 11 -------------------------------
     @Test @Disabled
     void testAllWordsByAlphabetWithoutRepeat() {
-        // todo Получить список всех слов по алфавиту без повторов
+        // todo Отримати список всіх слів за алфавітом без повторів
         List<String> result = null;
 
         assertEquals("alice", result.get(5));
@@ -130,14 +130,14 @@ public class TestCollections {
     // 12 -------------------------------
     @Test @Disabled
     void testFindMostFrequentWord() {
-        // todo Найти самое часто вcтречающееся слово
+        // todo Знайти слово, що зустрічається найчастіше
         assertEquals("the", mostFrequentWord());
     }
 
     // 13 -------------------------------
     @Test @Disabled
     void testFindWordsByLengthInAlphabetOrder() throws IOException {
-        // todo получить список слов, длиной не более 5 символов, переведенных в нижний регистр, в порядке алфавита, без повторов
+        // todo Отримати список слів, довжиною не більше 5 символів, переведених у нижній регістр, в порядку алфавіту, без повторів
         List<String> strings = null;
 
         assertEquals(94, strings.size());
